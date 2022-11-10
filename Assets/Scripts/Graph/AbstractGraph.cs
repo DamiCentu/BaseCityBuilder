@@ -7,6 +7,6 @@ namespace Graph
     public abstract class AbstractGraph<TCollection> where TCollection : IEnumerable
     {
         protected IFactory Factory { get; set; }
-        protected TCollection AllNodes { get; set;}
+        public TCollection AllNodes { get; set;}
     }
 }

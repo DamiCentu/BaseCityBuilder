@@ -46,6 +46,11 @@ namespace Graph
       [MethodImpl((MethodImplOptions) 256)] set => z = value;
     }
 
+    public static Vector3 ToVector3(GridCoordinates coordinates)
+    {
+      return new Vector3(coordinates.x, coordinates.y, coordinates.z);
+    }
+
     /// <summary>
     ///   <para>Initializes and returns an instance of a new GridCoordinates with x and y components and sets z to zero.</para>
     /// </summary>

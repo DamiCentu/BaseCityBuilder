@@ -132,7 +132,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 376614451}
-  - component: {fileID: 376614452}
   m_Layer: 0
   m_Name: TestGrid
   m_TagString: Untagged
@@ -156,20 +155,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &376614452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 376614450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31ef5c48b01b871469953ee8fd050fa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  size: {x: 5, y: 5, z: 2}
-  prefab: {fileID: 0}
 --- !u!1 &923357755
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,4 +378,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   size: {x: 10, y: 10, z: 10}
-  prefab: {fileID: 2902780104567603107, guid: 75772f209a8b6164c8d15500d7be2899, type: 3}
+  prefab: {fileID: -7540069594327340359, guid: 5527de9fa36ac504aa631bc960e46ab8, type: 3}

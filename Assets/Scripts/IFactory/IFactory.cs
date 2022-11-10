@@ -1,7 +1,9 @@
-﻿namespace Factory
+﻿using UnityEngine;
+
+namespace Factory
 {
     public interface IFactory
     {
-        TObject CreateInstance<TObject>() where TObject : new();
+        public TObject CreateInstance<TObject>() where TObject : new();
     }
 }
