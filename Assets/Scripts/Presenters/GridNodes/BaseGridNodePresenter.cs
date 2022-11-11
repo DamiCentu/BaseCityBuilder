@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Factory;
+using UnityEngine;
 
 namespace Presenters
 {
@@ -8,7 +9,8 @@ namespace Presenters
         
         public override void ConstructPresenter()
         {
-            View = Instantiate(viewPrefab, transform);
+            View = ViewFactory.CreateInstance(viewPrefab);
+            View.transform.SetParent(transform);
         }
     }
 }

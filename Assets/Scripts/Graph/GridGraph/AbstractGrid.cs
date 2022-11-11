@@ -13,7 +13,7 @@ namespace Graph
     public class GridSetupConfig : AbstractSetupConfig
     {
         public Vector3Int gridSize;
-        public IFactory Factory = new ObjectFactory();
+        public IFactory Factory = new Factory.BaseFactory();
     }
 
     public enum Dimensions

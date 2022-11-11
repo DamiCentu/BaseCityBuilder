@@ -23,7 +23,7 @@ public class GridTest : MonoBehaviour
         foreach (GridNode node in gameGrid.AllNodes)
         {
             BaseGridNodeModel baseGridNodeModel = new BaseGridNodeModel();
-            baseGridNodeModel.Setup(new BaseGridNodeModelSetupConfig()
+            baseGridNodeModel.Setup(new BaseGridNodeModel.BaseGridNodeModelSetupConfig()
             {
                 GridNode = node
             });

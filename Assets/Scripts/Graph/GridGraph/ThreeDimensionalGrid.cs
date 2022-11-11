@@ -24,7 +24,7 @@ namespace Graph
                     for (int z = 0; z < AllNodes.GetLength((int)Dimensions.Z); z++)
                     {
                         TNode currentNode = Factory.CreateInstance<TNode>();
-                        currentNode.Setup(new GridNodeSetupConfig()
+                        currentNode.Setup(new GridNode.GridNodeSetupConfig()
                         {
                             Coordinates = new GridCoordinates(x, y, z)
                         }); 

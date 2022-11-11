@@ -13,10 +13,10 @@ namespace Graph
         }
         
         public GridCoordinates GridCoordinates { get; private set; }
-    }
-
-    public class GridNodeSetupConfig : AbstractSetupConfig
-    {
-        public GridCoordinates Coordinates;
+        
+        internal class GridNodeSetupConfig : AbstractSetupConfig
+        {
+            public GridCoordinates Coordinates;
+        }
     }
 }

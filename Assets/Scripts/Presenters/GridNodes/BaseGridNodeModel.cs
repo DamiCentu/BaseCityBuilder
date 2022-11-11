@@ -1,4 +1,6 @@
-﻿using Graph;
+﻿using System;
+using Factory;
+using Graph;
 using Settable;
 
 namespace Presenters
@@ -13,11 +15,10 @@ namespace Presenters
 
             GridNode = config.GridNode;
         }
+        
+        internal class BaseGridNodeModelSetupConfig : AbstractSetupConfig
+        {
+            public GridNode GridNode;
+        }
     }
-
-    public class BaseGridNodeModelSetupConfig : AbstractSetupConfig
-    {
-        public GridNode GridNode;
-    }
-    
 }
