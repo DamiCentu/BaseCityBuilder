@@ -1,5 +1,4 @@
-﻿using Factory;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Presenters
 {
@@ -8,6 +7,11 @@ namespace Presenters
         [SerializeField] private BaseGridNodeView viewPrefab; //todo load from the model
         
         public override void ConstructPresenter()
+        {
+            ConstructView();
+        }
+
+        private void ConstructView()
         {
             View = ViewFactory.CreateInstance(viewPrefab);
             View.transform.SetParent(transform);
