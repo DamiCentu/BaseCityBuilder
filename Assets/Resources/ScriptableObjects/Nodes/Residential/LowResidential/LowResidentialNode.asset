@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d2d100f02599481bb81c17e57d7865a, type: 3}
+  m_Name: LowResidentialNode
+  m_EditorClassIdentifier: 
+  type: LowResidential
+  states:
+  - {fileID: 11400000, guid: 7c5c2a70bf56c4cc48b9c3706b147bbe, type: 2}
+  sda:
+    CurrentString: User1
+    AvailableChoices: []
