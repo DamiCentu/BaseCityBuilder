@@ -5,15 +5,15 @@ using UnityEngine;
 
 namespace ScriptableObjects.Utils
 {
-    public class DictionarySerializable <TKey, TValue> : ScriptableObject, ISerializationCallbackReceiver
+    [Serializable]
+    public class DictionarySerializable <TKey, TValue>
     {
         [SerializeField] private List<KeyValueSerializable<TKey, TValue>> dictionary = new List<KeyValueSerializable<TKey, TValue>>();
 
         public Dictionary<TKey, TValue> DeserializedDictionary { get; } = new Dictionary<TKey, TValue>();
 
-        public void OnBeforeSerialize() { }
-
-        public void OnAfterDeserialize()
+        [OnDeserialized]
+        private void OnAfterDeserialize()
         {
             DeserializedDictionary.Clear();
             foreach (KeyValueSerializable<TKey, TValue> keyValue in dictionary)

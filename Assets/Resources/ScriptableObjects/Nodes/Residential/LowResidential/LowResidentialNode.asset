@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: LowResidentialNode
   m_EditorClassIdentifier: 
   type: LowResidential
-  states:
-  - {fileID: 11400000, guid: 7c5c2a70bf56c4cc48b9c3706b147bbe, type: 2}
-  sda:
-    CurrentString: User1
-    AvailableChoices: []
+  nodeStateMachine:
+    stateMachine:
+    - {fileID: 11400000, guid: 7c5c2a70bf56c4cc48b9c3706b147bbe, type: 2}

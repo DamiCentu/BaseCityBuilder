@@ -1,18 +1,21 @@
 using System;
+using Reflection;
 using SerializableObjects;
 using UnityEditor;
 using UnityEngine;
-using Object = UnityEngine.Object;
 
 [CustomPropertyDrawer(typeof(StringEnum), true)]
 public class CustomDropdownDrawer : PropertyDrawer
 {
     private int selectedIndex = 0;
-    private static string[] availableChoices = new string[]{ "User1", "User2" };
  
     public override void OnGUI(Rect position, SerializedProperty serializedProperty, GUIContent label)
     {
         SerializedProperty currentStringField = serializedProperty.FindPropertyRelative(nameof(StringEnum.CurrentString));
+         
+        Type serializedType = ReflectionUtils.GetType(serializedProperty.type);
+        
+        string[] availableChoices =  ((StringEnum)Activator.CreateInstance(serializedType)).AvailableChoices;
 
         EditorGUI.BeginChangeCheck();
         

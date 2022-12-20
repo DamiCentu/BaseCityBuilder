@@ -12,5 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe40ea230514360a671f60937fec6fc, type: 3}
   m_Name: LowResidentialEmptyState
   m_EditorClassIdentifier: 
-  stateName: Empty
+  stateClassName:
+    CurrentString: 
   viewPrefab: {fileID: 1807214999252174736, guid: 41f89505fca5a46228fd65f480d9f520, type: 3}
+  transitionsConfig:
+  - transitionsInputs:
+    - CurrentString: GridNodeState
+    stateDestiny:
+      CurrentString: GridNodeState
