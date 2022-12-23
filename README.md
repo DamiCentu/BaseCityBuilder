@@ -1,4 +1,4 @@
-# CS-BaseCityBuilder
+# CS-CorePackage
 
 Work in progress...
 
